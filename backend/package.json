@@ -1,0 +1,27 @@
+{
+  "name": "productivity-hub-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "build": "echo \"No build step needed for Vercel\"",
+    "start": "node src/app.js",
+    "db:setup": "node db/setup.js"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.0.0",
+    "@vercel/postgres": "^0.5.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "google-auth-library": "^9.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "openai": "^4.28.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
